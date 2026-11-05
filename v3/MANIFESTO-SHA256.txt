@@ -1,0 +1,9 @@
+# MANIFESTO-SHA256 — V3 antes/depois premium (mesoestetic)
+# gerado: 2026-11-05T14:30:42.201726
+# artefatos autônomos: fonte Hanken Grotesk (OFL) e logo oficiais embutidos; zero rede.
+d2037a6a3531fe80c79581a59ba92bd5c092c7216a344b6427a489bef62e27e2  campo-vesicular.html
+8357fa11202f4ded15975161375bce1b5cda27769e1e03eec9548d3fc66e3497  elos-em-suspensao.html
+e0330909b7157ad594a4ce44f4dcbab4c00a239860923708ebfce52173edecd6  helice-aberta.html
+a09e070ab22a95d154644e2b515d613233d2b1dfd2836a2edc4302acab4d4942  materia-em-relevo.html
+ddadf56ec73a6a97c8e9a8be30b6b9f7496533750e9e14397e39dc716922395f  seda-em-vies.html
+2195dfe51cb8d919b38a7b280cc77a49ff5afc45fff1b6e086a9ddefcc129946  index.html
