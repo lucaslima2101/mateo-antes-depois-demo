@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>mateo × mesoestetic — demo antes/depois</title>
+<style>
+  :root{
+    --texto:#1D1D1B; --texto2:#4A4A4A; --texto3:#7D7D7D;
+    --borda:#D1D1D1; --superficie:#F2F2F2; --fundo:#F8F8F8; --branco:#FFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--fundo); color:var(--texto);
+    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:48px 24px 64px}
+  header{border-bottom:2px solid var(--texto);padding-bottom:20px;margin-bottom:14px}
+  .logo{font-weight:700;font-size:15px;letter-spacing:.02em}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:300;letter-spacing:-.01em;margin-top:14px}
+  .selo{display:inline-block;margin-top:14px;padding:6px 12px;background:var(--texto);color:var(--branco);
+    font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .lead{margin-top:14px;font-size:14px;line-height:1.55;color:var(--texto2);max-width:640px}
+  .meta-nota{margin-top:10px;font-size:12px;color:var(--texto3);line-height:1.5}
+  .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:36px}
+  a.cartao{
+    display:block;background:var(--branco);border:1px solid var(--borda);border-radius:10px;
+    padding:20px;text-decoration:none;color:inherit;
+    box-shadow:0 1px 2px rgba(0,0,0,.05);transition:box-shadow .15s ease, transform .15s ease;
+  }
+  a.cartao:hover{box-shadow:0 6px 18px rgba(0,0,0,.10);transform:translateY(-2px)}
+  .num{font-size:11px;color:var(--texto3);letter-spacing:.08em}
+  .cartao h2{font-size:17px;font-weight:600;margin:8px 0 6px}
+  .cartao p{font-size:13px;line-height:1.5;color:var(--texto2)}
+  .hash{display:block;margin-top:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:10.5px;color:var(--texto3);word-break:break-all}
+  footer{margin-top:44px;border-top:1px solid var(--borda);padding-top:18px;
+    font-size:12px;line-height:1.7;color:var(--texto2)}
+  footer strong{color:var(--texto)}
+  .manifesto{margin-top:10px;font-size:12px}
+  .manifesto a{color:var(--texto)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">mesoestetic</div>
+    <h1>comparativo antes / depois — demonstração</h1>
+    <span class="selo">Uso restrito</span>
+    <p class="lead">Cinco variações de composição em um único design system, geradas por pipeline
+    não generativo. Cada saída é um documento autônomo: fonte, logotipo e imagens embutidos —
+    nenhuma requisição de rede, nenhum upload, 100% local no seu navegador.</p>
+    <p class="meta-nota">Saídas seladas <strong>USO RESTRITO</strong>: pendem fonte autorizada,
+    revisão técnica e consentimento explícito de imagem. Tempo desconhecido é declarado como
+    “tempo não informado” — nunca inventado. Campos opcionais ausentes não aparecem.</p>
+  </header>
+
+  <main class="grade">
+    <a class="cartao" href="grade-clinica.html" target="_blank" rel="noopener">
+      <span class="num">01</span>
+      <h2>Grade Clínica</h2>
+      <p>Duas colunas simétricas, filete preto, faixa de campos no cabeçalho.</p>
+      <span class="hash">sha256 <span data-h="grade-clinica.html"></span></span>
+    </a>
+    <a class="cartao" href="dossie-vertical.html" target="_blank" rel="noopener">
+      <span class="num">02</span>
+      <h2>Dossiê Vertical</h2>
+      <p>Fundo preto-marca, imagens empilhadas, wordmark em cartão branco.</p>
+      <span class="hash">sha256 <span data-h="dossie-vertical.html"></span></span>
+    </a>
+    <a class="cartao" href="split-minimal.html" target="_blank" rel="noopener">
+      <span class="num">03</span>
+      <h2>Split Minimal</h2>
+      <p>Faixas horizontais full-bleed, título minúsculo gigante, rodapé mínimo.</p>
+      <span class="hash">sha256 <span data-h="split-minimal.html"></span></span>
+    </a>
+    <a class="cartao" href="verificacao-tecnica.html" target="_blank" rel="noopener">
+      <span class="num">04</span>
+      <h2>Verificação Técnica</h2>
+      <p>Molduras com ticks, arquivo + SHA-256 por lado, caixa de metadados.</p>
+      <span class="hash">sha256 <span data-h="verificacao-tecnica.html"></span></span>
+    </a>
+    <a class="cartao" href="cartao-editorial.html" target="_blank" rel="noopener">
+      <span class="num">05</span>
+      <h2>Cartão Editorial</h2>
+      <p>Cartões brancos com sombra sobre #F8F8F8, composição centralizada.</p>
+      <span class="hash">sha256 <span data-h="cartao-editorial.html"></span></span>
+    </a>
+  </main>
+
+  <footer>
+    <strong>imagens: placeholders sintéticos de demonstração — não são pacientes.</strong><br>
+    Conteúdo meramente demonstrativo, sem dados privados. As imagens de teste são gráficos
+    sintéticos determinísticos (seeds fixas), nunca fotografias de pessoas. Nada é enviado a
+    servidor: as páginas não contêm formulários, scripts de rede nem chamadas externas.<br>
+    Fonte substituta Hanken Grotesk (OFL) — oficial Graphik sem licença. Resultados podem variar
+    de pessoa para pessoa.
+    <div class="manifesto"><a href="MANIFESTO-SHA256.txt">MANIFESTO-SHA256.txt — hashes completos para verificação</a></div>
+  </footer>
+</div>
+<script>
+var HASHES = {
+"grade-clinica.html": "76f8cb1b1f6dbf2bc0c992cd89c8efe27ff237543769bd35c80caab36f64bbfe",
+"dossie-vertical.html": "0f400a2a6aeb3fcd38a59dd77ac07ff5b77c5c98e13515c5a7cfcc7bfa8192ec",
+"split-minimal.html": "1428af4a2aaf90a2104a690d0f935ae35fb4082cf9cd271c24c3c4522a1ccc05",
+"verificacao-tecnica.html": "cd23e0931cebe2f8d31d43c01d24286c06d05bc06a47003046ff0e0043f14ec3",
+"cartao-editorial.html": "ca19a125f890802cf1be02f2be897e543b590b7d8d099d76ace00508894713f3"
+};
+</script>
+<script>
+document.querySelectorAll('[data-h]').forEach(function(el){
+  var t = HASHES[el.getAttribute('data-h')];
+  if (t) el.textContent = t;
+});
+</script>
+</body>
+</html>
