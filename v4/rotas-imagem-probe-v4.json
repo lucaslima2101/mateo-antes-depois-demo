@@ -1,0 +1,12 @@
+{
+  "pergunta": "Geração de imagens por IA (GPT Image / Nano Banana / Flow) estava efetiva nesta rodada V4?",
+  "resposta": "NÃO — as três rotas nomeadas foram re-sondadas com chamadas reais em 2026-11-05 e seguem bloqueadas; nada foi simulado como gerado. Fundos 100% procedimentais (CSS + SVG inline, sementes fixas).",
+  "sondagens": [
+    {"rota": "GPT Image (OpenAI) — catálogo ao vivo", "resultado": "nenhuma rota gpt_image* no /v1/models ao vivo (360 modelos listados em 2026-11-05 18:41; candidatos de imagem existentes: tokenrouter/google/gemini-3-pro-image-preview, gemini-3.1-flash-image-preview, gemini-3.1-flash-lite-image, gemini-2.5-flash-image, alitp-intl/wan2.7-image, wan2.7-image-pro)", "timestamp": "2026-11-05T18:41"},
+    {"rota": "Nano Banana · tokenrouter/google/gemini-2.5-flash-image via /v1/images/generations", "resultado": "HTTP 400 — Provider 'tokenrouter' does not support image generation", "timestamp": "2026-11-05T18:42"},
+    {"rota": "Nano Banana · tokenrouter/google/gemini-2.5-flash-image via /v1/chat/completions (modalidade imagem)", "resultado": "HTTP 503 → upstream 403: User's credit limit is insufficient, remaining credit limit: $-0.000152 (insufficient_user_quota, quota $0.00 — sem recarga; nenhuma cobrança pretendida)", "timestamp": "2026-11-05T18:42"},
+    {"rota": "Google Flow (labs.google/flow → flow.google.com) via navegador real", "resultado": "CTA 'Crie com o Google Flow' → accounts.google.com/v3/signin (muro de login; nenhuma sessão autorizada no navegador — nenhuma credencial digitada)", "timestamp": "2026-11-05T18:45"}
+  ],
+  "decisao": "Fundos 100% procedimentais e determinísticos (CSS + SVG inline), como na V3. Prompts futuros permanecem documentados na especificação V3 (seção 7), rotulados 'não utilizado nesta rodada'.",
+  "restituicao": "Esta rodada não gastou crédito: as chamadas falharam antes de qualquer geração (400/503) e nenhuma geração procedural custa nada."
+}

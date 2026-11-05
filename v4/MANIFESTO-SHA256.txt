@@ -1,0 +1,10 @@
+# MANIFESTO-SHA256 — V4 antes/depois refinado (sem marca)
+# gerado: 2026-11-05T15:48:04.712432
+# artefatos autônomos: fonte Hanken Grotesk (OFL) embutida; zero rede;
+# sem logo/nenhuma referência de marca; verificação clínica pendente em todas as peças.
+72ecf403ad8e741e43254675185c26366ae8c46500170457652d6e4d8e31d2d6  campo-vesicular.html
+98be535f53462aa17aad3353345d5f18cbbd11e441f817c090d1157ae6148ed8  elos-em-suspensao.html
+1a12a85ff5f9b09e0da351ff1cc73618e9e514128b2cf84eedf9789769e71a37  helice-aberta.html
+73b0e4e484e940167f99b9b92c6e166831182355d50646ad8f561de3a289ffc1  materia-em-relevo.html
+7a0b86f84f00ed4951226deb768f486b43bd2afdfca5a623aaadb33e284b7454  seda-em-vies.html
+3b4149e12fc74eb6b543be9d1e25894c6397664eda11109afaad9303f51073b4  index.html
